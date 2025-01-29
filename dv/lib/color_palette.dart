@@ -12,8 +12,6 @@ class ColorPalette {
     ],
 
     // 식기 테마에 사용할 색상 팔레트
-
-    
     [
       Color(0x00d9dfc6),
       Color(0x00eff3ea),
@@ -29,7 +27,7 @@ class ColorPalette {
       Color(0x00e17564)
     ],
 
-    // 원석 테마에 사용할 색상 팔레트트
+    // 원석 테마에 사용할 색상 팔레트
     [Color(0x00050c9c), Color(0x003572ef), Color(0x003abef9), Color(0x00a7e6ff)]
   ];
 }
