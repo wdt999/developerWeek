@@ -1,3 +1,4 @@
+import 'package:dv/settings/setting_screen.dart';
 import 'package:flutter/material.dart';
 
 class FloatingMenuButton extends StatefulWidget {
@@ -79,7 +80,7 @@ class _FloatingMenuButtonState extends State<FloatingMenuButton> {
             print("설정 클릭");
           }),
           _buildMenuItem(Icons.logout, "로그아웃", () {
-            print("로그아웃 클릭");
+            SettingScreen();
           }),
         ],
       ),
