@@ -1,3 +1,4 @@
+import 'package:dv/color_palette.dart';
 import 'package:flutter/material.dart';
 
 // 테스트용 메인 함수. 실제 앱에서는 사용하지 않음(main.dart에서 실행)
@@ -68,13 +69,13 @@ class ImageRiseAnimationState extends State<ImageRiseAnimation>
   Widget build(BuildContext context) {
     if (screenHeight == 0.0) {
       return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: ColorPalette.palette[0][0],  // 배경색 color_palette.dart에서 가져오기
         body: Center(child: CircularProgressIndicator()), // 높이를 가져올 때까지 로딩 표시
       );
     }
 
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: ColorPalette.palette[0][0],  // 배경색 color_palette.dart에서 가져오기
       body: Stack(
         alignment: Alignment.center,  // 중앙 정렬
         children: [
