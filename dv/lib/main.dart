@@ -1,3 +1,4 @@
+import 'package:dv/menu/menu.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,7 +32,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Scaffold(
+        body: Stack(
+          children: [
+            Center(
+              child: Text("메인 화면"),),
+              FloatingMenuButton(),
+            
+          ],
+        ),
+      ),
     );
   }
 }
