@@ -77,10 +77,13 @@ class _FloatingMenuButtonState extends State<FloatingMenuButton> {
             print("홈 클릭");
           }),
           _buildMenuItem(Icons.settings, "설정", () {
-            print("설정 클릭");
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => SettingScreen()),
+            );
           }),
           _buildMenuItem(Icons.logout, "로그아웃", () {
-            SettingScreen();
+            print("로그아웃 클릭");
           }),
         ],
       ),
